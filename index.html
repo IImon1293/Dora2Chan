@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ドラえもん板 - ドラえもんについて熱く語ろう！</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div class="header-content">
+                <h1>ドラえもん板</h1>
+                <p class="subtitle">～ドラえもんについて熱く語るスレ～</p>
+            </div>
+            <div class="doraemon-character">
+                <div class="doraemon-head">
+                    <div class="doraemon-face">
+                        <div class="doraemon-eyes">
+                            <div class="doraemon-eye"></div>
+                            <div class="doraemon-eye"></div>
+                        </div>
+                        <div class="doraemon-nose"></div>
+                        <div class="doraemon-mouth"></div>
+                        <div class="doraemon-whiskers">
+                            <div class="doraemon-whisker left-1"></div>
+                            <div class="doraemon-whisker left-2"></div>
+                            <div class="doraemon-whisker right-1"></div>
+                            <div class="doraemon-whisker right-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="thread-info">
+            <h2>【総合】ドラえもんについて熱く語るスレ Part.1【ひみつ道具】</h2>
+            <p class="thread-meta">1 ：名無しの四次元ポケット：2025/06/28(土) 12:00:00.00 ID:doraemon001</p>
+            <div class="thread-starter">
+                ドラえもんの魅力について語り合いましょう！<br>
+                好きなひみつ道具、感動したエピソード、映画の思い出など<br>
+                なんでもOKです！<br><br>
+                
+                まず俺から。どこでもドアがあれば通勤地獄から解放されるのになぁ...<br>
+                でも実際にあったら交通産業が崩壊しそうｗ
+            </div>
+        </div>
+
+        <div id="posts-container">
+            <!-- 投稿がここに表示される -->
+        </div>
+
+        <div id="post-form">
+            <h3>書き込み</h3>
+            <form id="new-post-form">
+                <div class="form-group">
+                    <label>名前：</label>
+                    <input type="text" id="name" placeholder="名無しの四次元ポケット" maxlength="30">
+                    <label>E-mail：</label>
+                    <input type="text" id="email" placeholder="dora22@dmail.co.jp" maxlength="30">
+                </div>
+                <div class="form-group">
+                    <textarea id="content" placeholder="本文を入力してください" rows="6" required></textarea>
+                </div>
+                <button type="submit">書き込む</button>
+            </form>
+        </div>
+
+        <footer>
+            <p>ドラえもん板＠2ch風掲示板 | 22世紀のテクノロジーで作られました</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

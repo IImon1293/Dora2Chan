@@ -1,0 +1,308 @@
+/* 2ちゃんねる風スタイル */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "MS PGothic", "ＭＳ Ｐゴシック", sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #000080;
+    background-color: #efefef;
+}
+
+#container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f0e0d6;
+}
+
+header {
+    background-color: #1e50a2;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content {
+    flex: 1;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.subtitle {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* ドラえもん風キャラクター */
+.doraemon-character {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+}
+
+.doraemon-head {
+    width: 50px;
+    height: 50px;
+    background-color: #4A90E2;
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid #2C5F8F;
+}
+
+.doraemon-face {
+    width: 35px;
+    height: 35px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #ddd;
+}
+
+.doraemon-eyes {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+}
+
+.doraemon-eye {
+    width: 6px;
+    height: 8px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.doraemon-nose {
+    width: 4px;
+    height: 4px;
+    background-color: #ff4444;
+    border-radius: 50%;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.doraemon-mouth {
+    width: 12px;
+    height: 6px;
+    border: 1px solid #000;
+    border-top: none;
+    border-radius: 0 0 12px 12px;
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.doraemon-whiskers {
+    position: absolute;
+    top: 18px;
+    width: 100%;
+}
+
+.doraemon-whisker {
+    width: 8px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+}
+
+.doraemon-whisker.left-1 {
+    left: 2px;
+    top: -2px;
+}
+
+.doraemon-whisker.left-2 {
+    left: 2px;
+    top: 2px;
+}
+
+.doraemon-whisker.right-1 {
+    right: 2px;
+    top: -2px;
+}
+
+.doraemon-whisker.right-2 {
+    right: 2px;
+    top: 2px;
+}
+
+#thread-info {
+    padding: 10px;
+    background-color: #f0e0d6;
+    border-bottom: 1px solid #ccc;
+}
+
+#thread-info h2 {
+    font-size: 18px;
+    color: #cc0000;
+    margin-bottom: 10px;
+}
+
+.thread-meta {
+    font-size: 14px;
+    color: #008000;
+    margin-bottom: 10px;
+}
+
+.thread-starter {
+    margin-left: 20px;
+    padding: 5px 0;
+}
+
+#posts-container {
+    padding: 10px;
+}
+
+.post {
+    margin-bottom: 5px;
+    padding: 5px 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+.post-header {
+    font-size: 14px;
+    color: #008000;
+    margin-bottom: 5px;
+}
+
+.post-number {
+    font-weight: bold;
+}
+
+.post-name {
+    color: #008000;
+    font-weight: bold;
+}
+
+.post-name.sage {
+    color: #0000ff;
+}
+
+.post-id {
+    color: #666;
+}
+
+.post-content {
+    margin-left: 20px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.delete-btn {
+    float: right;
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    padding: 2px 6px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+.delete-btn:hover {
+    background-color: #ff3333;
+}
+
+.anchor-link {
+    color: #0000ff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.anchor-link:hover {
+    text-decoration: underline;
+}
+
+#post-form {
+    padding: 20px;
+    background-color: #f0e0d6;
+    border-top: 2px solid #ccc;
+}
+
+#post-form h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #cc0000;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: inline-block;
+    width: 80px;
+    font-size: 14px;
+}
+
+.form-group input[type="text"] {
+    width: 200px;
+    padding: 3px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+}
+
+.form-group input[type="text"]:nth-of-type(2) {
+    margin-left: 20px;
+}
+
+#content {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    font-family: "MS PGothic", "ＭＳ Ｐゴシック", sans-serif;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    padding: 5px 20px;
+    font-size: 14px;
+    background-color: #cccccc;
+    border: 1px solid #999999;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #dddddd;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: #666;
+    background-color: #e0e0e0;
+}
+
+/* AA（アスキーアート）用のスタイル */
+.aa {
+    font-family: "MS PGothic", "IPAMonaPGothic", "Mona", "MS PGothic", monospace;
+    font-size: 16px;
+    line-height: 18px;
+    white-space: pre;
+}
